@@ -15,7 +15,11 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit() {
     this.subscription = this.route.queryParams.subscribe(params => {
+     
+      console.log('params in details=' , params);
+     
       this.updateDetails(params);
+    
     });
   }
 

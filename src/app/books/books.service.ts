@@ -29,6 +29,8 @@ export class BooksService {
       responseType:'json',
       params:params
     })
+    
+    console.log('test');
 
     return new Promise<any>((resolve , reject)=>{
       result.subscribe(resolve as any, reject as any)
